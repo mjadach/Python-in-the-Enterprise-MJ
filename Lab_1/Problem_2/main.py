@@ -38,5 +38,5 @@ if __name__ == '__main__':
     list_output = count_words_in_files(files_list)
     list_to_file(file_name, list_output)
     print("po zmianie")
-    print("elo")
+    print("elsadsadadaso")
     os.system("jupyter notebook ./" + file_name)
