@@ -36,3 +36,4 @@ if __name__ == '__main__':
 #komentarz z branczca
     #jak zobrazować wyjście??
     #zmiana od kogos innego
+#zmiana od kogos innrgo v2
