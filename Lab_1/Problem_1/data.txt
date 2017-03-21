@@ -1,8 +1,3 @@
-Logs\baseline_BdJPsiKs_MagD.log:
-
-
-PrChecker.Downs...   INFO **** Downstream                    2001182 tracks including        778305 ghosts [38.9 %], Event average  32.8 % ****
-
 PrChecker.Downs...   INFO                             UT+T : 1082186 from  1495076 [ 72.4 %]   1721 clones [ 0.2 %], purity: 97.57 %, hitEff: 98.68 %
 
 PrChecker.Downs...   INFO                        UT+T>5GeV :  722379 from   911792 [ 79.2 %]   1466 clones [ 0.2 %], purity: 97.62 %, hitEff: 98.82 %
@@ -35,11 +30,6 @@ PrChecker.Downs...   INFO
 
 
 
-
-Logs\DR_BdJPsiKs_MagD_1k.log:
-
-
-PrChecker.Downs...   INFO **** Downstream                      45282 tracks including         14020 ghosts [31.0 %], Event average  26.2 % ****
 
 PrChecker.Downs...   INFO                             UT+T :   27900 from    41997 [ 66.4 %]     27 clones [ 0.1 %], purity: 97.70 %, hitEff: 96.89 %
 
@@ -74,11 +64,6 @@ PrChecker.Downs...   INFO
 
 
 
-Logs\DR_NE_BdJPsiKs_MagD.log:
-
-
-PrChecker.Downs...   INFO **** Downstream                    1633238 tracks including        488789 ghosts [29.9 %], Event average  25.1 % ****
-
 PrChecker.Downs...   INFO                             UT+T : 1024513 from  1495076 [ 68.5 %]   1508 clones [ 0.1 %], purity: 97.65 %, hitEff: 97.00 %
 
 PrChecker.Downs...   INFO                        UT+T>5GeV :  693356 from   911792 [ 76.0 %]   1368 clones [ 0.2 %], purity: 97.67 %, hitEff: 97.02 %
@@ -111,11 +96,6 @@ PrChecker.Downs...   INFO
 
 
 
-
-Logs\DR_NE_BdJPsiKs_MagD_1k.log:
-
-
-PrChecker.Downs...   INFO **** Downstream                      45885 tracks including         13947 ghosts [30.4 %], Event average  25.5 % ****
 
 PrChecker.Downs...   INFO                             UT+T :   28628 from    41997 [ 68.2 %]     34 clones [ 0.1 %], purity: 97.63 %, hitEff: 96.91 %
 
