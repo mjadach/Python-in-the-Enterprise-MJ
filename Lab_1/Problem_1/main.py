@@ -33,7 +33,5 @@ if __name__ == '__main__':
     list_output = find_in_files(files_list, string_to_look_for)
     list_to_file(file_name, list_output)
     os.system("jupyter notebook ./" + file_name)
-#komentarz z branczca
-    #jak zobrazować wyjście??
-    #zmiana od kogos innego
-#zmiana od kogos innrgo v2
+
+    # nowy komentarz
