@@ -3,11 +3,12 @@ import Exceptions
 from matplotlib.backends.backend_pdf import PdfPages
 import matplotlib.pyplot as plt
 
+
 def list_all_files(folder_name):
     files_list = []
     for file in os.listdir(folder_name):
         if file.endswith(".log"):
-            if validate_input_file(file_name):
+            if validate_input_file(file_name) == 1:
                 files_list.append(os.path.join((folder_name), file))
     return files_list
 
@@ -18,7 +19,6 @@ def find_in_files(files_list, string_to_look_for):
     first_line = 1
     for file in files_list:
         with open(file, "r") as f:
-            #    list_output.append(file + ":\n\n")
             for l in f:
                 if l.find(string_to_look_for) != -1:
                     if first_line == 0:
@@ -76,7 +76,8 @@ if __name__ == '__main__':
     list_output = find_in_files(files_list, string_to_look_for)
     visualise(list_output)
     list_to_file(file_name, list_output)
-    # to mi wyswietli w przegladarce plik tekstowy
+
+    # to mi wyswietli w przegladarce plik tekstowy:
     # os.system("jupyter notebook ./" + file_name)
     # jak zrobic, zeby wyswietlalo tekst + wykres?
     # czyli jak polaczyc pdfa i txt sensownie?
