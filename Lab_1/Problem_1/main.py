@@ -34,4 +34,5 @@ if __name__ == '__main__':
     list_to_file(file_name, list_output)
     os.system("jupyter notebook ./" + file_name)
 
-    # nowy komentarz
+    # nowy samochod
+    # nowa rzecz
