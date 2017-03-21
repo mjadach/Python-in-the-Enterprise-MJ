@@ -36,3 +36,4 @@ class Calculator(AbstractCalculator):
         return numpy.derivate(function, step)
     # http://stackoverflow.com/questions/9876290/how-do-i-compute-derivative-using-numpy
     # idea mockow polega na tym, ze zamiast funkcji, ktora sie bedzie wykonywala ciagle, podmieniamy funkcje, ktora jest wykonywana np. godzine na cos prostego - jedyne co nas obchodzi, to zeby ta funkcja cos zwrocila
+#
