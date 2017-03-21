@@ -35,3 +35,4 @@ if __name__ == '__main__':
     os.system("jupyter notebook ./" + file_name)
 
     # nowy komentarz
+    # dodaje nowe cos
