@@ -36,6 +36,4 @@ class TestCalculator(TestCase):
         a = 1
         b = 0
         self.assertRaises(SecondNumberZero, calculator.Divide(a,b))
-        self.assertRaises(SecondNumberZero, calculator.Divide(b,a))
         self.assertRaises(SecondNumberZero, calculator.Divide(b,b))
-        self.assertRaises(SecondNumberZero, calculator.Divide(a,a))
