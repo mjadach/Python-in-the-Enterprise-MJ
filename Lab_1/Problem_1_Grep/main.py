@@ -2,7 +2,7 @@ import os
 from matplotlib.backends.backend_pdf import PdfPages
 import matplotlib.pyplot as plt
 
-from Lab_1.Problem_1_Word_Counter import Exceptions
+from Lab_1.Problem_1_Grep import Exceptions
 
 
 def list_all_files(folder_name):
