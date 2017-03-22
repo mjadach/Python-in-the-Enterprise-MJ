@@ -1,20 +1,18 @@
-import abc
-from abc import ABC
+from unittest import TestCase
+from unittest.mock import patch
 
 import numpy
 
-from Lab_2.Problem_1_Calculator_v2.AbstractCalculator import AbstractCalculator
+from Lab_2.Problem_1_Calculator_v2.Calculator import Calculator
+from Lab_2.Problem_1_Calculator_v2.Exceptions import NotANumber
 
-
-class NotANumber(Exception):
-    pass
 
 class TestCalculator(TestCase):
     # dekorator - uzycie standardowej biblioteki do mockowania
-    @patch(numpy.derivate, return_value = 'x')
+    @patch(numpy.derivate, return_value = 'a')
     def test_should_derivate_correctly(self):
         calculator = Calculator()
-        expected_output = 'x'
+        expected_output = 'a'
     # dzieki temu ta funkcja nie jest wykonywana, tylko od razu zwraca 'a'
         self.assertEqual(calculator.Derivate(),expected_output)
     def test_should_something_very_very_long(self):
@@ -30,11 +28,13 @@ class TestCalculator(TestCase):
         self.assertRaise (NotANumber, calculator.Add(f,s))
         self.assertRaise (NotANumber, calculator.Add(s,f))
         self.assertRaise (NotANumber, calculator.Add(s,s))
-    #todo: wyjatek, ze nie dzielimy przez zero
+    def test_should_raise_exception_if_second_number_is_zero(self):
+        calculator = Calculator()
+        a = 1
+        b = 0
+        self.assertRaises(SecondNumberZero, calculator.Divide(a,b))
+        self.assertRaises(SecondNumberZero, calculator.Divide(b,a))
+        self.assertRaises(SecondNumberZero, calculator.Divide(b,b))
+        self.assertRaises(SecondNumberZero, calculator.Divide(a,a))
 
-class Calculator(AbstractCalculator):
-    def Derivate(self, function, step):
-        return numpy.derivate(function, step)
-    # http://stackoverflow.com/questions/9876290/how-do-i-compute-derivative-using-numpy
-    # idea mockow polega na tym, ze zamiast funkcji, ktora sie bedzie wykonywala ciagle, podmieniamy funkcje, ktora jest wykonywana np. godzine na cos prostego - jedyne co nas obchodzi, to zeby ta funkcja cos zwrocila
-# alt+enter na bledzie
+    #todo: wyjatek, ze nie dzielimy przez zero

@@ -1,9 +1,9 @@
 ## jak tworzymy validator:
 import os
-
+'''
 class AbstractValidator:
     def validate(selfself, arg):
-
+'''
 class NotAString(Exception):
     pass
 
