@@ -6,7 +6,7 @@ from Lab_2.Problem_1_Calculator_v2.Exceptions import NotAString
 class AbstractValidator:
     def validate(self, arg):
         return 1
-        #nie mam pojecia jak to obsluzyc
+        #nie mam pojecia jak to obsluzyca
 
 class InputFileValidator(AbstractValidator):
     def validate(self, arg):
