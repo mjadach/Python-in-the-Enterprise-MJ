@@ -1,7 +1,8 @@
 import os
-import Exceptions
 from matplotlib.backends.backend_pdf import PdfPages
 import matplotlib.pyplot as plt
+
+from Lab_1.Problem_1_Grep import Exceptions
 
 
 def list_all_files(folder_name):
