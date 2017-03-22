@@ -4,12 +4,12 @@ from unittest.mock import patch
 import numpy
 
 from Lab_2.Problem_1_Calculator_v2.Calculator import Calculator
-from Lab_2.Problem_1_Calculator_v2.Exceptions import NotANumber
+from Lab_2.Problem_1_Calculator_v2.Exceptions import NotANumber, SecondNumberZero
 
 
 class TestCalculator(TestCase):
     # dekorator - uzycie standardowej biblioteki do mockowania
-    @patch(numpy.derivate, return_value = 'a')
+    @patch(numpy.derivate , return_value = 'a')
     def test_should_derivate_correctly(self):
         calculator = Calculator()
         expected_output = 'a'
@@ -36,5 +36,3 @@ class TestCalculator(TestCase):
         self.assertRaises(SecondNumberZero, calculator.Divide(b,a))
         self.assertRaises(SecondNumberZero, calculator.Divide(b,b))
         self.assertRaises(SecondNumberZero, calculator.Divide(a,a))
-
-    #todo: wyjatek, ze nie dzielimy przez zero
