@@ -1,12 +1,21 @@
+import abc
+from abc import ABC
+
 import numpy
 
 class NotANumber(Exception):
     pass
 
-class AbstractCalculator:
+class AbstractCalculator(ABC):
+    @abc.abstractmethod
     def Add(self, arg1, arg2):
+        pass
+    @abc.abstractmethod
     def Divide(self, arg1, arg2):
+        pass
+    @abc.abstractmethod
     def Derivate(self, function, step):
+        pass
 
 class TestCalculator(TestCase):
     # dekorator - uzycie standardowej biblioteki do mockowania
@@ -15,7 +24,7 @@ class TestCalculator(TestCase):
         calculator = Calculator()
         expected_output = 'a'
     # dzieki temu ta funkcja nie jest wykonywana, tylko od razu zwraca 'a'
-        assertEqual(calculator.Derivate(),expected_output)
+        self.assertEqual(calculator.Derivate(),expected_output)
     def test_should_something_very_very_long(self):
         calculator = Calculator()
         first = 1
@@ -36,4 +45,4 @@ class Calculator(AbstractCalculator):
         return numpy.derivate(function, step)
     # http://stackoverflow.com/questions/9876290/how-do-i-compute-derivative-using-numpy
     # idea mockow polega na tym, ze zamiast funkcji, ktora sie bedzie wykonywala ciagle, podmieniamy funkcje, ktora jest wykonywana np. godzine na cos prostego - jedyne co nas obchodzi, to zeby ta funkcja cos zwrocila
-#
+# alt+enter na bledzie
