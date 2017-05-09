@@ -1,5 +1,5 @@
-from Lab_3_TicTacToe.Board import Board
-from Lab_3_TicTacToe.Screen import play_again
+from Board import Board
+from Screen import play_again
 
 if __name__ == "__main__":
 

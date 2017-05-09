@@ -1,9 +1,9 @@
 from click._compat import raw_input
 
-from Lab_3_TicTacToe.AbstractBoard import AbstractBoard
+from AbstractBoard import AbstractBoard
 import os
 
-from Lab_3_TicTacToe.Screen import clear_screen
+from Screen import clear_screen
 
 
 class Board(AbstractBoard):
